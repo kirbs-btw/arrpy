@@ -1,6 +1,7 @@
 import random
 
-def randList(count, min, max):
+
+def randList(count: int, min, max):
     """
     creates a list containing random elements
     :param count: number of elements
@@ -14,7 +15,8 @@ def randList(count, min, max):
 
     return arr
 
-def randList2d(count, min, max):
+
+def randList2d(count: int, min, max):
     """
     creates a 2d cubic list containing random elements
 
@@ -39,14 +41,15 @@ def randList2d(count, min, max):
 
     return arr
 
-def array2d(row, column):
+
+def array2d(row: int, column: int):
     """
     creates empty 2d array
     :param row: number of rows -> must be integer
     :param column: number of column -> must be integer
     :return: returns empty 2d array
     """
-    
+
     arr = []
     tempArr = []
     for j in range(column):
@@ -57,5 +60,27 @@ def array2d(row, column):
     return arr
 
 
+def addArray(arrA, arrB):
+    """
+    adds two number arrays
+    :param arrA: array number one -> only numbers
+    :param arrB: array number two -> only numbers
+    :return:
+    """
+
+    if len(arrA) > len(arrB):
+        arrA, arrB = arrB, arrA
 
 
+    newArr = []
+    lastItemIndex = 0
+
+    for i in range(len(arrA)):
+        newItem = arrA[i] + arrB[i]
+        newArr.append(newItem)
+        lastItemIndex += 1
+
+    for i in range(len(arrB) - lastItemIndex):
+        newArr.append(arrB[i + lastItemIndex])
+
+    return newArr
