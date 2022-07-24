@@ -101,3 +101,17 @@ def shuffle(arr):
         arr[a], arr[b] = arr[b], arr[a]
 
     return arr
+
+def stack(arrA, arrB):
+    newArr = []
+
+    for n, i in enumerate(arrA):
+        newArr.append([arrA[n], arrB[n]])
+
+    return newArr
+
+
+
+
+
+
