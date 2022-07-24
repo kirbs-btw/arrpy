@@ -84,3 +84,20 @@ def addArray(arrA, arrB):
         newArr.append(arrB[i + lastItemIndex])
 
     return newArr
+
+def multiList(dimension, size,min, max):
+    newArr = []
+
+    for i in range(dimension):
+        tempArr = []
+        for j in range(size):
+            tempArr.append(random.randint(min, max))
+        newArr.append(tempArr)
+
+def shuffle(arr):
+    for i in range(len(arr)*10):
+        a = random.randint(0, (len(arr)-1))
+        b = random.randint(0, (len(arr) - 1))
+        arr[a], arr[b] = arr[b], arr[a]
+
+    return arr
