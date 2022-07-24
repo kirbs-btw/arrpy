@@ -11,7 +11,12 @@ def main():
     arrB = [0, 2, 3, 1, 5]
     arrA = [1, 2, 3, 4, 5, 6, 7]
 
-    print(arrpy.addArray(arrA, arrB))
+
+    print(arrpy.stack(arrB, arrA))
+
+    print(arrpy.shuffle(arrA))
+
+    # print(arrpy.addArray(arrA, arrB))
 
 
 if __name__ == '__main__':
