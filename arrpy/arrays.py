@@ -14,6 +14,23 @@ def randList(count: int, min, max):
 
     return arr
 
+def shape(arr):
+
+    shape = []
+    smallArr = arr
+    run = True
+
+    while run:
+        if type(smallArr) != list:
+            break
+
+        print("Hello")
+        a = len(smallArr)
+        shape.append(a)
+        smallArr = smallArr[0]
+
+
+    return shape
 
 def randList2d(count: int, min, max):
     """
