@@ -18,6 +18,10 @@ def main():
 
     # print(arrpy.addArray(arrA, arrB))
 
+def testShape():
+    arr = [[2, 3, 4],"ello", 3, 4]
+    print(arrpy.shape(arr))
+
 
 if __name__ == '__main__':
-    main()
+    testShape()
